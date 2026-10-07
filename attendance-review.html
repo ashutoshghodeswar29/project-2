@@ -34,6 +34,10 @@
     .brand-mark { width: 34px; height: 34px; border-radius: 10px; color: white; background: var(--blue); display: grid; place-items: center; font-size: 17px; font-weight: 800; box-shadow: 0 4px 10px #3267d533; }
     .brand small { display: block; color: var(--muted); font-weight: 500; letter-spacing: 0; font-size: 11px; margin-top: 1px; }
     .top-actions { display: flex; align-items: center; gap: 16px; }
+    .page-nav { display: flex; align-items: center; gap: 6px; margin-left: auto; margin-right: 24px; }
+    .page-nav a { color: #64728a; text-decoration: none; padding: 8px 11px; border-radius: 7px; font-size: 12px; font-weight: 650; }
+    .page-nav a:hover { background: #f3f6fb; color: var(--navy); }
+    .page-nav a[aria-current="page"] { color: var(--blue); background: var(--blue-soft); }
     .period { color: #526178; font-size: 13px; }
     .avatar { height: 36px; width: 36px; border-radius: 50%; display: grid; place-items: center; color: #31569a; background: #e7efff; font-size: 12px; font-weight: 750; }
     main { max-width: 1240px; margin: 0 auto; padding: 36px 28px 54px; }
@@ -109,6 +113,7 @@
   <div class="app">
     <header class="topbar">
       <div class="brand"><div class="brand-mark">N</div><div>Northstar<small>People &amp; Culture</small></div></div>
+      <nav class="page-nav" aria-label="Attendance pages"><a href="attendance-review.html" aria-current="page">Attendance review</a><a href="managers-attendance.html">Managers</a></nav>
       <div class="top-actions"><div class="period">Wednesday, October 7, 2026</div><div class="avatar" aria-label="Signed in as Alex Morgan">AM</div></div>
     </header>
     <main>
